@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #103a58;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background-image: url(image/cosmic-space.webp);
+    padding: 30px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0px 20px 40px rgba(193, 184, 184, 0.4), 
+                inset 0px 2px 5px rgba(171, 166, 166, 0.2);
+}
+
+.display {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #ebeee9;
+    padding: 20px;
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 5px solid #c7c3c3;
+    box-shadow: inset 0px 5px 15px rgba(92, 92, 174, 0.5);
+    min-height: 60px;
+    overflow: hidden;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.small-btn {
+    background-color: #444;
+    color: #fff;
+    font-size: 10px;
+    padding: 6px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.small-btn:hover { background-color: #09722a; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 0px 4px #5f5f5f;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px #948282;
+}
+
+.num-btn {
+    background-color: #cbd5e0;
+    color: #222;
+}
+
+.num-btn:hover { background-color: #e2e8f0; }
+
+.black-btn {
+    background-color: #878181;
+    color: #ffffff;
+}
+
+.black-btn:hover { background-color: #333; }
+
+
+.red-btn {
+    background-color: #c4171a;
+    color: white;
+}
+
+.red-btn:hover { background-color: #ff5255; 
+}
+
+.tall {
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+button:focus {
+    outline: none;
+}
