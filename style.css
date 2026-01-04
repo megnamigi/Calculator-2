@@ -18,11 +18,12 @@ body {
 }
 
 .display {
-    background: linear-gradient(135deg, #1a1a1a, #333);
-    color: #ebeee9;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3 ) #333);
+    color: #f4f1f0;
     padding: 20px;
     text-align: right;
     font-size: 50px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -40,7 +41,7 @@ body {
 }
 
 .small-btn {
-    background-color: #444;
+    background-color: rgba(255, 255, 255, 0.3)
     color: #fff;
     font-size: 10px;
     padding: 6px 2px;
@@ -50,7 +51,7 @@ body {
     transition: background 0.2s;
 }
 
-.small-btn:hover { background-color: #09722a; 
+.small-btn:hover { background-color: #4a3dd1; 
 }
 
 .buttons {
@@ -60,30 +61,41 @@ body {
 }
 
 button {
-    border: none;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
     border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
     padding: 15px 0;
     cursor: pointer;
     transition: all 0.1s;
-    box-shadow: 0px 4px #5f5f5f;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.8);
+                0 0 40px rgba(0, 150, 255, 0.4);
+    background rgba(255, 255, 255, 0.2);
 }
 
 button:active {
+    background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(2px);
     box-shadow: 0px 2px #948282;
 }
 
 .num-btn {
-    background-color: #cbd5e0;
+    background-color: rgba(255, 255, 255, 0.3)
     color: #222;
 }
 
 .num-btn:hover { background-color: #e2e8f0; }
 
 .black-btn {
-    background-color: #878181;
+    background-color: rgba(193, 184, 184, 0.4)
     color: #ffffff;
 }
 
@@ -91,7 +103,7 @@ button:active {
 
 
 .red-btn {
-    background-color: #c4171a;
+    background-color: rgba(0, 150, 255, 0.8)
     color: white;
 }
 
